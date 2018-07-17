@@ -95,10 +95,7 @@ class QuickBooks(object):
 
     @property
     def api_url(self):
-        if self.sandbox:
-            return self.sandbox_api_url_v3
-        else:
-            return self.api_url_v3
+        return self.api_url_v3
 
     def get_current_user(self):
         """Get data from the current user endpoint"""
